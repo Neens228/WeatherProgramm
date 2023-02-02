@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorpane1" cache="true" cacheHint="QUALITY" pickOnBounds="false" prefHeight="613.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.PleaseProvideControllerClassName">
+    <children>
+      <AnchorPane fx:id="anchorPane" layoutX="152.0" layoutY="461.0" prefHeight="140.0" prefWidth="167.0" style="-fx-border-radius: 20px; -fx-border-color: #2B2B2B; -fx-border-width: 10px;">
+         <children>
+                          <Text fx:id="SpeedOfWind" layoutX="23.0" layoutY="115.0" strokeWidth="0.0" text="Chose  th  city" textAlignment="CENTER" wrappingWidth="139.9999999999999">
+                  <font>
+                      <Font name="Century Gothic" size="18.0" />
+                  </font>
+              </Text>
+            <ImageView fitHeight="48.0" fitWidth="56.0" layoutX="64.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="https://cdn-icons-png.flaticon.com/512/959/959711.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-2.0" prefHeight="90.2" prefWidth="1002.0" style="-fx-background-color: #2B2B2B;">
+         <children>
+              <Text fx:id="City" fill="WHITE" layoutX="2.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City: not chosen" wrappingWidth="530.13671875">
+                  <font>
+                      <Font name="Century Gothic" size="39.0" />
+                  </font>
+              </Text>
+              <Button fx:id="ButtonLondon" alignment="CENTER" layoutX="776.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="114.0" text="London">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font></Button>
+              <Button fx:id="ButtonWashington" alignment="CENTER" layoutX="889.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="113.0" text="Washington" />
+              <Button fx:id="ButtonYekaterinburg" alignment="CENTER" layoutX="776.0" layoutY="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="113.0" text="Yekaterinburg">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font></Button>
+              <Button fx:id="MoscowButton" alignment="CENTER" layoutX="889.0" layoutY="60.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="113.0" text="Moscow" />
+              <Button fx:id="ButtonMadrid" alignment="CENTER" layoutX="889.0" layoutY="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="113.0" text="Madrid" />
+            <Button fx:id="ParisButton" alignment="CENTER" layoutX="776.0" layoutY="60.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="113.0" text="Paris">
+               <font>
+                  <Font name="Century Gothic" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+        <Text layoutX="182.0" layoutY="442.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wind speed" wrappingWidth="124.0">
+            <font>
+                <Font name="Century Gothic" size="21.0" />
+            </font>
+        </Text>
+        <Text fx:id="VlajnostProgress" layoutX="30.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Humidity" wrappingWidth="92.0">
+            <font>
+                <Font name="Century Gothic" size="21.0" />
+            </font>
+        </Text>
+        <Text fx:id="Sunny" layoutX="57.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="200.13671875">
+            <font>
+                <Font name="Century Gothic" size="22.0" />
+            </font>
+        </Text>
+      <AnchorPane layoutX="14.0" layoutY="464.0" prefHeight="134.0" prefWidth="124.0" style="-fx-border-radius: 20px; -fx-border-color: #2B2B2B; -fx-border-width: 10px;">
+         <children>
+              <ProgressIndicator fx:id="Humidity" cacheHint="QUALITY" layoutX="22.0" layoutY="27.0" minHeight="80.0" minWidth="80.0" mouseTransparent="true" prefHeight="134.0" prefWidth="134.0" progress="0.0">
+                  <effect>
+                      <Blend mode="HARD_LIGHT" opacity="0.89" />
+                  </effect>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+              </ProgressIndicator>
+         </children>
+      </AnchorPane>
+      <Button fx:id="ButtonF" layoutX="914.0" layoutY="547.0" mnemonicParsing="false" text="°F">
+         <font>
+            <Font name="Comic Sans MS Bold" size="34.0" />
+         </font>
+      </Button>
+      <AnchorPane fx:id="anchorPane1" layoutX="20.0" layoutY="245.0" prefHeight="113.0" prefWidth="300.0" style="-fx-border-radius: 20px; -fx-border-color: #2B2B2B; -fx-border-width: 10px;">
+         <children>
+              <Text fx:id="FeelsLike" layoutX="32.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Feels like: choose the city" wrappingWidth="237.0">
+                  <font>
+                      <Font name="Century Gothic" size="28.0" />
+                  </font>
+              </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorPane2" layoutX="20.0" layoutY="110.0" prefHeight="113.0" prefWidth="294.0" style="-fx-border-radius: 20px; -fx-border-color: #2B2B2B; -fx-border-width: 10px;">
+         <children>
+              <Text fx:id="Time" layoutX="17.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weather at: " wrappingWidth="263.0">
+                  <font>
+                      <Font name="Century Gothic" size="30.0" />
+                  </font>
+              </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorPane3" layoutX="572.0" layoutY="110.0" prefHeight="171.0" prefWidth="414.0" style="-fx-border-radius: 20px; -fx-border-color: #2B2B2B; -fx-border-width: 10px;">
+         <children>
+            <Text fx:id="Degrees" boundsType="LOGICAL_VERTICAL_CENTER" layoutX="8.0" layoutY="63.0" stroke="WHITE" strokeMiterLimit="0.0" strokeWidth="0.0" text="0.0°C" textAlignment="RIGHT" textOrigin="CENTER" wrappingWidth="390.13671875">
+               <font>
+                  <Font name="Century Gothic" size="75.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="Weather" fitHeight="48.0" fitWidth="54.0" layoutX="350.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cloud.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="AboutCity" fitHeight="63.0" fitWidth="67.0" layoutX="42.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cloud.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
